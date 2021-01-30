@@ -1,0 +1,1 @@
+global.timeOfDayIndex = 0;
