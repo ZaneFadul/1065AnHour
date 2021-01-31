@@ -43,14 +43,17 @@ if(car_nearby != noone && player_by_station && global.keyInteract){
 		with(car_nearby){
 			state = "COMPLETE";	
 		}
+		with(bigE){
+			instance_destroy(self);	
+		}
 	}
 }
 
-if(!instance_exists(oKey) && is_e == false && player_by_station){
+if(car_nearby != noone && car_is_empty && !instance_exists(oKey) && is_e == false && player_by_station){
 	bigE = instance_create_depth(x,y-245,-5,oKey);
 	is_e = true;
 }
-else if(!player_by_station && is_e){
+else if((!player_by_station && is_e)){
 	with(bigE){
 		instance_destroy(self);	
 	}

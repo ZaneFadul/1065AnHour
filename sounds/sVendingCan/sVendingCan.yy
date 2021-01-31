@@ -10,8 +10,8 @@
     "name": "audiogroup_default",
     "path": "audiogroups/audiogroup_default",
   },
-  "soundFile": "sVendingCan",
-  "duration": 0.0,
+  "soundFile": "sVendingCan.mp3",
+  "duration": 1.62459207,
   "parent": {
     "name": "Sounds",
     "path": "folders/Sounds.yy",
