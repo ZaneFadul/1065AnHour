@@ -20,6 +20,6 @@ counter = 0;
 time = 0;
 day = 1;
 
-secsPerIndex = 5;
+secsPerIndex = 35;
 
 dayBreakSceneTwo = false;

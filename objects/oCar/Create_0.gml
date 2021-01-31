@@ -31,13 +31,10 @@ sils[? 6] = s6;
 sils[? 7] = s7;
 sils[? 8] = s7n;
 
-silSpriteIndex = 0;
-if(silSpriteIndex == 0) with(sil) sprite_index = other.sils[? round(random_range(1, 8))];
-else with(sil) sprite_index = other.sils[? other.silSpriteIndex];
+with(sil) sprite_index = other.sils[? round(random_range(1, 8))];
 
-forcedColor = 0;
-if(!forcedColor) color = colors[? round(random_range(1,4))];
-else color = colors[? forcedColor];
+color = colors[? round(random_range(1,4))];
+
 
 sprite_index = color;
 

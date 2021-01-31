@@ -14,4 +14,6 @@ if(oTime.timeOfDayIndex == 3){
 	fadeOut(sDay);
 	fadeIn(sNightCalm);
 	loop(sNightCalm);
+} else {
+	loop(sDay);
 }
