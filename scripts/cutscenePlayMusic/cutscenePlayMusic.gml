@@ -2,7 +2,9 @@
 ///@param sound
 function cutscenePlayMusic(argument0) {
 
-	audio_play_sound(argument0,1,1);
+	global.currentSong = argument0;
+	if(audio_sound_get_gain(global.currentSong < 1)) audio_sound_gain(global.currentSong, 1, 0);
+	loop(argument0);
 	cutsceneEndAction();
 
 

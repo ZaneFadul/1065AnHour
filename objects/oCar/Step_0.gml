@@ -34,7 +34,8 @@ if(state != "COMPLETE" && place_meeting(x + 20 * velOffset, y, oGasStation)){
 x += vel;
 
 
-if(x > view_w && state == "COMPLETE") instance_destroy(self);
+if(x > view_w + sprite_width && state == "COMPLETE") instance_destroy(self);
+if(x < view_x - sprite_width && state == "COMPLETE") instance_destroy(self);
 
 wheel.image_xscale = scale * velOffset;
 wheel.image_yscale = scale;
@@ -43,10 +44,10 @@ sil.image_xscale = scale * velOffset;
 sil.image_yscale = scale;
 
 if(vel > 0) {
-	wheel.sprite_index = smallwmov; //this sprite doesnt move
+	wheel.sprite_index = smallw; //this sprite doesnt move
 	wheel.image_speed = 5 * vel;
 } else {
-	wheel.sprite_index = smallw; //this sprite moves??
+	wheel.sprite_index = smallwmov; //this sprite moves??
 }
 image_xscale = scale * velOffset;
 image_yscale = scale;

@@ -7,7 +7,9 @@ if(dayBreakSceneTwo){
 	oCutscene.cutscene = true;
 	oCutscene.autoAdd = false;
 	oCutscene.sceneInfo = [
+		[cutsceneChangeVariable, oTime, "timeOfDayIndex", 0],
 		[cutsceneChangeVariable, oCutscene, "color", c_silver],
+		[cutscenePlayMusic, sDay],
 		[cutsceneBlack],
 		[cutsceneWait,1],
 		[cutsceneFadeIn]
@@ -43,18 +45,17 @@ if(counter % room_speed == 0) {
 }
 
 //handle day changes
-timeOfDayIndex = floor(time / 45);
+timeOfDayIndex = floor(time / 5);
 
 if(timeOfDayIndex == 4){
 	instance_create_layer(-1,-1,"Instances",oCutscene);
 	oCutscene.cutscene = true;
 	oCutscene.autoAdd = false;
 	oCutscene.sceneInfo = [
-		[cutsceneStopAllSound],
 		[cutsceneFadeOut],
-		[cutsceneWait, 2],
+		[cutsceneFadeOutAudio, global.currentSong],
+		[cutsceneWait, 1],
 		[cutsceneChangeVariable, oCutscene, "depth", 0],
-		[cutsceneChangeVariable, oTime, "timeOfDayIndex", 0],
 		[cutsceneChangeVariable, oTime, "day", day + 1],
 		[cutsceneChangeVariable, oTime, "counter", 0],
 		[cutsceneChangeVariable, oTime, "time", 0],
