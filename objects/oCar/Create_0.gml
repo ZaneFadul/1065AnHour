@@ -21,11 +21,30 @@ colors[? 2] = smcar2;
 colors[? 3] = smcar3;
 colors[? 4] = smcar4;
 
-color = colors[? round(random_range(1,4))];
+sils = ds_map_create();
+sils[? 1] = s1;
+sils[? 2] = s2dad;
+sils[? 3] = s3;
+sils[? 4] = s4;
+sils[? 5] = s5;
+sils[? 6] = s6;
+sils[? 7] = s7;
+sils[? 8] = s7n;
+
+silSpriteIndex = 0;
+if(silSpriteIndex == 0) with(sil) sprite_index = other.sils[? round(random_range(1, 8))];
+else with(sil) sprite_index = other.sils[? other.silSpriteIndex];
+
+forcedColor = 0;
+if(!forcedColor) color = colors[? round(random_range(1,4))];
+else color = colors[? forcedColor];
 
 sprite_index = color;
 
 scale = 0.70;
+
+dialogue = pointer_null;
+async = false;
 
 var gas1 = instance_find(oGasStation,0);
 var gas2 = instance_find(oGasStation,1);
