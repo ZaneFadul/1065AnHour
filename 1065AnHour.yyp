@@ -43,7 +43,6 @@
     {"id":{"name":"s7","path":"sprites/s7/s7.yy",},"order":7,},
     {"id":{"name":"pumpright","path":"sprites/pumpright/pumpright.yy",},"order":34,},
     {"id":{"name":"g_fillside","path":"sprites/g_fillside/g_fillside.yy",},"order":14,},
-    {"id":{"name":"create_car_props","path":"scripts/create_car_props/create_car_props.yy",},"order":1,},
     {"id":{"name":"Sprite54","path":"sprites/Sprite54/Sprite54.yy",},"order":51,},
     {"id":{"name":"smcar3","path":"sprites/smcar3/smcar3.yy",},"order":39,},
     {"id":{"name":"oCutsceneTriggerP","path":"objects/oCutsceneTriggerP/oCutsceneTriggerP.yy",},"order":2,},

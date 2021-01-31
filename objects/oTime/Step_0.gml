@@ -82,5 +82,4 @@ if(counter % room_speed = 0 && timeOfDayIndex < 4 && layer_exists(backgroundLaye
 	layer_background_stretch(currentLayer, true);
 }
 
-addCar(4,2,pointer_null,0,1,10);
-addCar(4,2,pointer_null,0,1,5);
+

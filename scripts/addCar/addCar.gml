@@ -12,7 +12,7 @@ function addCar(argument0, argument1, argument2, argument3, argument4, argument5
 	for(var i = 0; i < ds_queue_size(global.queue); i ++){
 		newArray[i] = ds_queue_dequeue(queueCopy);
 	}
-	show_debug_message(string(newArray));
+	
 	for(var i = 0; i < array_length(newArray); i ++){
 		//var currInstance = instance_find(oAddCarNode, i);
 		//show_debug_message(currInstance);
