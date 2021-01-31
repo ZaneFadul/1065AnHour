@@ -20,4 +20,9 @@ if(state == "CLOSED" && !audio_is_playing(sVendingCan) && player_by_station && g
 
 if(state == "OPEN" && global.keyInteract){
 	//goto last room
+	room_goto(rBunker);
+	instance_destroy(oTime);
+	instance_destroy(oCar);
+	instance_destroy(oPlayer);
+	instance_destroy(oKey);
 }

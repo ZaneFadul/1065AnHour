@@ -15,7 +15,6 @@ if(nums == "771251" && alarm[3]<0){
 
 if(nums != "771251" && string_length(nums) > 6 && alarm[2]<0){
 	nums = "INVALID"	
-	show_debug_message(nums);
 	alarm[2] = room_speed*1.5;
 	if(!audio_is_playing(sBeepWrong)){
 		audio_play_sound(sBeepWrong,10,0);	
