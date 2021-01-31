@@ -14,7 +14,7 @@ if(!instance_exists(oCutscene)){
 	keyDash = global.keyDash;
 	keyTimeStop = global.keyTimeStop;
 } else {
-	if(oCutscene.cutscene){
+	if(oCutscene.cutscene && !oCutscene.async){
 		keyLeft = 0;
 		keyRight = 0;
 		keyUp = 0;

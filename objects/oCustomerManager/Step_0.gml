@@ -22,9 +22,4 @@ while(!allInUse && ds_queue_size(global.queue) > 0){
 	carProps = [];
 }
 
-addCar(4,2,pointer_null,0,1,5);
-
-addCar(4,2,pointer_null,0,1,10);
-
-addCar(4,2,pointer_null,0,2,15);
-addCar(4,2,pointer_null,0,2,15);
+addCar(4,2,Plot01,0,1,1);

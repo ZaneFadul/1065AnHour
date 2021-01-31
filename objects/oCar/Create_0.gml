@@ -41,6 +41,7 @@ sprite_index = color;
 scale = 0.70;
 
 dialogue = pointer_null;
+dialogueTrigger = instance_create_depth(x, y, -1000, oCutsceneTriggerT);
 async = false;
 
 var gas1 = instance_find(oGasStation,0);

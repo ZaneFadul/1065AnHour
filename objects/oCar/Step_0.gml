@@ -31,6 +31,15 @@ if(state != "COMPLETE" && place_meeting(x + 20 * velOffset, y, oGasStation)){
 	}
 }
 
+if(dialogue != pointer_null){
+	if(instance_exists(oCutsceneTriggerT)){
+		dialogueTrigger.x = x + sprite_get_width(smcar1) / 2 * velOffset ;
+		dialogueTrigger.y = y;
+		dialogueTrigger.autoAdd = false;
+		dialogueTrigger.cutsceneInfo = dialogue(); 
+	}
+} else instance_destroy(dialogueTrigger);
+
 x += vel;
 
 if(x >  2* view_w && state == "COMPLETE") instance_destroy();
