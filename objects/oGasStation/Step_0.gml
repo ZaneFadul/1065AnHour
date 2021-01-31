@@ -19,7 +19,7 @@ var player_in_hitbox = false; //&& place_meeting(x + sprite_width, y + sprite_he
 var pump_nearby = noone;
 var car_is_empty = false;
 var car_nearby = instance_place(x, y, oCar);
-var player_by_station = place_meeting(x,y,oPlayer);
+player_by_station = place_meeting(x,y,oPlayer);
 car_is_nearby = car_nearby != noone;
 
 if(pump != pointer_null) {
@@ -46,3 +46,13 @@ if(car_nearby != noone && player_by_station && global.keyInteract){
 	}
 }
 
+if(!instance_exists(oKey) && is_e == false && player_by_station){
+	bigE = instance_create_depth(x,y-245,-5,oKey);
+	is_e = true;
+}
+else if(!player_by_station && is_e){
+	with(bigE){
+		instance_destroy(self);	
+	}
+	is_e = false;
+}

@@ -1,8 +1,5 @@
 {
-  "spriteId": {
-    "name": "vending",
-    "path": "sprites/vending/vending.yy",
-  },
+  "spriteId": null,
   "solid": false,
   "visible": true,
   "spriteMaskId": null,
@@ -21,17 +18,16 @@
   "physicsKinematic": false,
   "physicsShapePoints": [],
   "eventList": [
-    {"isDnD":false,"eventNum":0,"eventType":0,"collisionObjectId":null,"parent":{"name":"oVending","path":"objects/oVending/oVending.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
-    {"isDnD":false,"eventNum":0,"eventType":3,"collisionObjectId":null,"parent":{"name":"oVending","path":"objects/oVending/oVending.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
+    {"isDnD":false,"eventNum":0,"eventType":0,"collisionObjectId":null,"parent":{"name":"oKey","path":"objects/oKey/oKey.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
   ],
   "properties": [],
   "overriddenProperties": [],
   "parent": {
-    "name": "interactables",
-    "path": "folders/Objects/interactables.yy",
+    "name": "graphics",
+    "path": "folders/Objects/graphics.yy",
   },
   "resourceVersion": "1.0",
-  "name": "oVending",
+  "name": "oKey",
   "tags": [],
   "resourceType": "GMObject",
 }

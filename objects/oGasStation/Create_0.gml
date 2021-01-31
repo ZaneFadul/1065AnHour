@@ -14,3 +14,7 @@ stationIDsno[? "L"] = pumpleft_no;
 stationIDsno[? "R"] = pumpright2_no;
 
 car_is_nearby = noone;
+player_by_station = 0;
+
+is_e = false;
+bigE = 0;
