@@ -1,6 +1,6 @@
 /// @description Insert description here
 // You can write your code in this editor
-depth = -19;
+depth = -1000;
 image_speed = 1;
 text[0] = "";
 character = oPlayer;
@@ -9,21 +9,8 @@ page = 0;
 charCount = 0;
 textPart = 0;
 fastText = 0;
-boxWidth = sprite_get_width(sTextbox);
+boxWidth = view_w / 4;
 stringHeight = string_height(text[page]);
-
+obj_to_follow = noone;
 spr = sTextbox;
-portrait = -1;
-audio = -1;
-
-switch(character){
-	case oPlayer:
-	portrait = sPlayerPortrait;
-	audio = uPlayerSpeak;
-	break;
-	
-	case oCreme:
-	portrait = sCremePortrait;
-	audio = uCremeSpeak;
-	break;
-}
+audio = sTalk;
