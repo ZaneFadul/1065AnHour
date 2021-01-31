@@ -18,7 +18,6 @@
     {"id":{"name":"sGasTank","path":"sprites/sGasTank/sGasTank.yy",},"order":6,},
     {"id":{"name":"sLand","path":"sounds/sLand/sLand.yy",},"order":13,},
     {"id":{"name":"lost_and_found1","path":"sprites/lost_and_found1/lost_and_found1.yy",},"order":29,},
-    {"id":{"name":"Fontbig","path":"fonts/Fontbig/Fontbig.yy",},"order":7,},
     {"id":{"name":"cutsceneEndAction","path":"scripts/cutsceneEndAction/cutsceneEndAction.yy",},"order":5,},
     {"id":{"name":"mcwalkright","path":"sprites/mcwalkright/mcwalkright.yy",},"order":31,},
     {"id":{"name":"s6","path":"sprites/s6/s6.yy",},"order":6,},
@@ -48,7 +47,11 @@
     {"id":{"name":"cutsceneChangeVariable","path":"scripts/cutsceneChangeVariable/cutsceneChangeVariable.yy",},"order":4,},
     {"id":{"name":"audio_auto","path":"scripts/audio_auto/audio_auto.yy",},"order":2,},
     {"id":{"name":"cutsceneStopSound","path":"scripts/cutsceneStopSound/cutsceneStopSound.yy",},"order":13,},
+<<<<<<< HEAD
+    {"id":{"name":"Plot04","path":"scripts/Plot04/Plot04.yy",},"order":4,},
+=======
     {"id":{"name":"creditTitleScreenBG","path":"sprites/creditTitleScreenBG/creditTitleScreenBG.yy",},"order":65,},
+>>>>>>> 55660a423b3610c96004da07985a093039b8a995
     {"id":{"name":"w3","path":"sprites/w3/w3.yy",},"order":46,},
     {"id":{"name":"s7","path":"sprites/s7/s7.yy",},"order":7,},
     {"id":{"name":"pumpright","path":"sprites/pumpright/pumpright.yy",},"order":34,},
@@ -58,7 +61,6 @@
     {"id":{"name":"oCutsceneTriggerP","path":"objects/oCutsceneTriggerP/oCutsceneTriggerP.yy",},"order":2,},
     {"id":{"name":"sDusk","path":"sprites/sDusk/sDusk.yy",},"order":7,},
     {"id":{"name":"oAudioManager","path":"objects/oAudioManager/oAudioManager.yy",},"order":6,},
-    {"id":{"name":"Font5","path":"fonts/Font5/Font5.yy",},"order":6,},
     {"id":{"name":"radioFont","path":"fonts/radioFont/radioFont.yy",},"order":4,},
     {"id":{"name":"sCollidable","path":"sprites/sCollidable/sCollidable.yy",},"order":2,},
     {"id":{"name":"Font2","path":"fonts/Font2/Font2.yy",},"order":0,},
@@ -67,7 +69,7 @@
     {"id":{"name":"oTime","path":"objects/oTime/oTime.yy",},"order":15,},
     {"id":{"name":"VendingButton","path":"sprites/VendingButton/VendingButton.yy",},"order":64,},
     {"id":{"name":"w1","path":"sprites/w1/w1.yy",},"order":44,},
-    {"id":{"name":"oCustomerManager","path":"objects/oCustomerManager/oCustomerManager.yy",},"order":22,},
+   {"id":{"name":"oCustomerManager","path":"objects/oCustomerManager/oCustomerManager.yy",},"order":22,},
     {"id":{"name":"sTalk","path":"sounds/sTalk/sTalk.yy",},"order":12,},
     {"id":{"name":"cutsceneWide","path":"scripts/cutsceneWide/cutsceneWide.yy",},"order":1,},
     {"id":{"name":"oCollidable","path":"objects/oCollidable/oCollidable.yy",},"order":1,},
@@ -148,7 +150,6 @@
     {"id":{"name":"sDakota","path":"sprites/sDakota/sDakota.yy",},"order":11,},
     {"id":{"name":"Plot03","path":"scripts/Plot03/Plot03.yy",},"order":3,},
     {"id":{"name":"oTimer","path":"objects/oTimer/oTimer.yy",},"order":24,},
-    {"id":{"name":"Font4","path":"fonts/Font4/Font4.yy",},"order":5,},
     {"id":{"name":"BUNKER","path":"sprites/BUNKER/BUNKER.yy",},"order":61,},
     {"id":{"name":"cutsceneRadio","path":"scripts/cutsceneRadio/cutsceneRadio.yy",},"order":22,},
     {"id":{"name":"disect_dialogue","path":"scripts/disect_dialogue/disect_dialogue.yy",},"order":12,},
@@ -194,7 +195,11 @@
     {"id":{"name":"oKey","path":"objects/oKey/oKey.yy",},"order":1,},
     {"id":{"name":"cutsceneChangeRoom","path":"scripts/cutsceneChangeRoom/cutsceneChangeRoom.yy",},"order":23,},
     {"id":{"name":"cutsceneInstanceCreate","path":"scripts/cutsceneInstanceCreate/cutsceneInstanceCreate.yy",},"order":7,},
+<<<<<<< HEAD
+    {"id":{"name":"Plot02","path":"scripts/Plot02/Plot02.yy",},"order":2,},
+=======
     {"id":{"name":"oCreditTitle","path":"objects/oCreditTitle/oCreditTitle.yy",},"order":3,},
+>>>>>>> 55660a423b3610c96004da07985a093039b8a995
     {"id":{"name":"cutsceneExecuteScriptWith2Arg","path":"scripts/cutsceneExecuteScriptWith2Arg/cutsceneExecuteScriptWith2Arg.yy",},"order":19,},
     {"id":{"name":"Plot10","path":"scripts/Plot10/Plot10.yy",},"order":10,},
     {"id":{"name":"change_resolution","path":"scripts/change_resolution/change_resolution.yy",},"order":5,},
