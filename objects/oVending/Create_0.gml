@@ -6,3 +6,5 @@ player_by_station = 0;
 
 is_e = false;
 bigE = 0;
+
+state = "CLOSED"

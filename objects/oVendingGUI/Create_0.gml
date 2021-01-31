@@ -1,6 +1,7 @@
 /// @description Insert description here
 // You can write your code in this editor
 
+
 exitLock = true;
 alarm[0] = room_speed * 1;
 buttons = ds_map_create();
@@ -20,3 +21,5 @@ depth = -11;
 if(!audio_is_playing(sVending)){
 	audio_play_sound(sVending,10,1);	
 }
+
+inputLock = false;

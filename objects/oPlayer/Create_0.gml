@@ -30,7 +30,7 @@ listOfCollisions = [oCollidableManager];
 
 tips = 0;
 
-xscale = 0.70;
-yscale = 0.70;
+xscale = .75;
+yscale = .75;
 
 idleState = false;

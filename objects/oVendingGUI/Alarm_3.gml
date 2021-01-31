@@ -6,8 +6,18 @@ audio_play_sound(sVendingCan,100,false);
 oVending.sprite_index = vendingopem;
 audio_stop_sound(sVending);
 
-if(!audio_is_playing(sUnlock)){
-	audio_play_sound(sUnlock,10,0);	
-}
+instance_create_layer(-1,-1,"Instances",oCutscene);
+oCutscene.cutscene = true;
+oCutscene.autoAdd = false;
+oCutscene.sceneInfo = [
+	[cutsceneFadeOut],
+	[cutsceneInstanceDestroy, oVendingButton],
+	[cutsceneInstanceDestroy, oVendingGUI],
+	[cutsceneBlack],
+	[cutscenePlaySound,sUnlock],
+	[cutsceneWait,1],
+	[cutsceneFadeIn]	
+];
 
-instance_destroy(self);
+oVending.state = "OPEN";
+
