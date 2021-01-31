@@ -78,8 +78,9 @@ if(counter % room_speed = 0 && timeOfDayIndex < 4 && layer_exists(backgroundLaye
 	layer_background_stretch(currentLayer, true);
 }
 
+
 //Dakota Meet Scene
-if(day == 1 && timeOfDayIndex == 3){
+/*if(day == 1 && timeOfDayIndex == 3){
 	instance_create_layer(-1,-1,"Instances",oCutscene);
 	oCutscene.cutscene = true;
 	oCutscene.autoAdd = false;
@@ -90,10 +91,30 @@ if(day == 1 && timeOfDayIndex == 3){
 		[cutsceneWait, 1],
 		[cutsceneInstanceCreate, 1472, 775, "Instances", oDakota],
 		[cutsceneFadeIn],
+		[cutsceneStopAllSound],
 		[cutscenePlayMusic, sTense],
-		[cutsceneTalk, "Dakota", ["Sup Bitch"]],
+		[cutsceneTalk, "Hooded Stranger", ["Hey"]],
+		[cutsceneTalk, "Gale", ["..."]],
+		[cutsceneTalk, "Hooded Stranger", ["HEEEEEEEY"]],
+		[cutsceneTalk, "Gale", ["???"]],
+		[cutsceneTalk, "Hooded Stranger", ["You're in danger."]],
+		[cutsceneTalk, "Hooded Stranger", ["You dont know it yet "]],
+		[cutsceneTalk, "Hooded Stranger", ["You dont know from who "]],
+		[cutsceneTalk, "Hooded Stranger", ["You dont know why"]],
+		[cutsceneTalk, "Hooded Stranger", ["But you need to get out"]],
+		[cutsceneTalk, "Hooded Stranger", ["I want to help you"]],
+		[cutsceneTalk, "Hooded Stranger", ["But I cant bring deadweight"]],
+		[cutsceneTalk, "Hooded Stranger", ["Figure out the three clues on the vending Machine"]],
+		[cutsceneTalk, "Hooded Stranger", ["And I can bring you with me"]],
+		[cutsceneTalk, "Gale", ["The hell was that?"]],
+		[cutsceneTalk, "Gale", ["..."]],
+		[cutsceneTalk, "Gale", ["But maybe a lil excitment, even stupid excitment wouldnt be that bad"]],
+		[cutsceneFadeIn],
+		[cutsceneInstanceDestroy, oDakota],
+		[cutsceneWait,1],
 		[cutsceneFadeOutAudio, sTense],
-		[cutsceneFadeInAudio, sNightLively]
+		[cutsceneFadeInAudio, sNightLively],
+		[cutsceneFadeOut],
 	];
-}
-
+	exit;
+}*/

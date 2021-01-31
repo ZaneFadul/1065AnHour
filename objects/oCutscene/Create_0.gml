@@ -16,8 +16,10 @@ y_dest = -1;
 rect1 = -1;
 rect2 = view_h;
 
-header= false;
+header = false;
 footer = false;
 autoAdd = true;
 
 color = c_black;
+
+async = false;
