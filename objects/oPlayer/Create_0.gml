@@ -32,3 +32,5 @@ tips = 0;
 
 xscale = 0.70;
 yscale = 0.70;
+
+idleState = false;

@@ -30,6 +30,7 @@ if(keyLeft > 0 || keyboard_check(ord("A"))){
 	moveRight = 0;
 	lookUp = 0;
 	lookDown = 0;
+	idleState = false; //unlocks idle animation
 }
 if(keyRight > 0 || keyboard_check(ord("D"))){
 	keyRight = 1;
@@ -37,6 +38,7 @@ if(keyRight > 0 || keyboard_check(ord("D"))){
 	moveRight = 1;
 	lookUp = 0;
 	lookDown = 0;
+	idleState = false; //unlocks idle animation
 }
 if(keyUp > 0){
 	moveLeft = 0;
@@ -116,3 +118,12 @@ if((xVel > 1 || xVel < -1)){
 	if (move != 0) image_xscale = xscale * move; else image_xscale = xscale;
 	
 image_yscale = yscale;
+
+// ------------------------ idle timer
+if(xVel == 0 && alarm[0] < 0){
+	alarm[0] = room_speed * 3;
+}
+
+if(idleState){
+	sprite_index = g_idleside;	
+}
