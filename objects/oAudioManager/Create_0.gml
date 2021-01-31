@@ -7,6 +7,7 @@ global.loop_map[? sNightLively] = sNightLivelyLoop;
 global.loop_map[? sDay] = sDay;
 global.loop_map[? sCredits] = sCredits;
 
+global.loop_map[? sTense] = sTense;
 global.currentSong = pointer_null;
 global.secondarySong = pointer_null;
 

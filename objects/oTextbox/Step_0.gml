@@ -6,7 +6,7 @@ if(done){
 	instance_destroy();
 }
 
-if(keyboard_check_pressed(vk_enter) || keyboard_check_pressed(vk_space) || gamepad_button_check_pressed(0,gp_start) || gamepad_button_check_pressed(0,gp_face1)){	
+if(keyboard_check_pressed(vk_enter) || keyboard_check_pressed(vk_space) || global.keyInteract){	
 	if(page + 1 < array_length_1d(text)){
 		
 		if(charCount >= string_length(text[page])){
@@ -26,3 +26,7 @@ if(keyboard_check_pressed(vk_enter) || keyboard_check_pressed(vk_space) || gamep
 		}
 	}
 }
+
+
+image_xscale = 0.7;
+image_yscale = 0.7;

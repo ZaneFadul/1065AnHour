@@ -2,11 +2,11 @@
   "isDnD": false,
   "isCompatibility": false,
   "parent": {
-    "name": "instance",
-    "path": "folders/Scripts/instance.yy",
+    "name": "cutscene",
+    "path": "folders/Scripts/cutscene.yy",
   },
   "resourceVersion": "1.0",
-  "name": "create_car_props",
+  "name": "cutsceneRadio",
   "tags": [],
   "resourceType": "GMScript",
 }

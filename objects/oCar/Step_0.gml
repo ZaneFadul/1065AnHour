@@ -33,8 +33,6 @@ if(state != "COMPLETE" && place_meeting(x + 20 * velOffset, y, oGasStation)){
 
 x += vel;
 
-//show_debug_message(ds_queue_size(global.queue));
-
 if(x >  2* view_w && state == "COMPLETE") instance_destroy();
 if(x < view_x - sprite_width && state == "COMPLETE") instance_destroy();
 

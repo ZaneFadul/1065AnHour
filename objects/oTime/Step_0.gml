@@ -52,8 +52,6 @@ if(timeOfDayIndex == 3 && instance_exists(oCar)){
 
 timeOfDayIndex = floor(time / secsPerIndex);
 
-
-
 if(timeOfDayIndex == 4){
 	instance_create_layer(-1,-1,"Instances",oCutscene);
 	oCutscene.cutscene = true;
@@ -62,6 +60,7 @@ if(timeOfDayIndex == 4){
 		[cutsceneFadeOut],
 		[cutsceneFadeOutAudio, global.currentSong],
 		[cutsceneWait, 1],
+		[cutsceneExecuteScriptWithArg, instance_destroy, oCar],
 		[cutsceneChangeVariable, oCutscene, "depth", 0],
 		[cutsceneChangeVariable, oTime, "day", day + 1],
 		[cutsceneChangeVariable, oTime, "counter", 0],
@@ -71,9 +70,6 @@ if(timeOfDayIndex == 4){
 		[cutsceneChangeVariable, oCutscene, "color", c_silver],
 		[cutsceneBlack],
 	];
-	with(oCar){
-		instance_destroy(self);	
-	}
 }
 
 if(counter % room_speed = 0 && timeOfDayIndex < 4 && layer_exists(backgroundLayer) && layer_background_get_index(currentLayer) != timeOfDay[? timeOfDayIndex]){
@@ -82,5 +78,22 @@ if(counter % room_speed = 0 && timeOfDayIndex < 4 && layer_exists(backgroundLaye
 	layer_background_stretch(currentLayer, true);
 }
 
-addCar(4,2,pointer_null,0,1,10);
-addCar(4,2,pointer_null,0,1,5);
+//Dakota Meet Scene
+if(day == 1 && timeOfDayIndex == 3){
+	instance_create_layer(-1,-1,"Instances",oCutscene);
+	oCutscene.cutscene = true;
+	oCutscene.autoAdd = false;
+	oCutscene.sceneInfo = [
+		[cutsceneFadeOut],
+		[cutsceneFadeOutAudio, global.currentSong],
+		[cutsceneBlack],
+		[cutsceneWait, 1],
+		[cutsceneInstanceCreate, 1472, 775, "Instances", oDakota],
+		[cutsceneFadeIn],
+		[cutscenePlayMusic, sTense],
+		[cutsceneTalk, "Dakota", ["Sup Bitch"]],
+		[cutsceneFadeOutAudio, sTense],
+		[cutsceneFadeInAudio, sNightLively]
+	];
+}
+
