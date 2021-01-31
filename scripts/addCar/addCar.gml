@@ -7,13 +7,18 @@
 // @param time
 
 function addCar(argument0, argument1, argument2, argument3, argument4, argument5){
-	for(var i = 0; i < instance_number(oAddCarNode); i ++){
-		var currInstance = instance_find(oAddCarNode, i);
-		show_debug_message(currInstance);
+	var queueCopy = global.queue;
+	var newArray = []
+	for(var i = 0; i < ds_queue_size(global.queue); i ++){
+		newArray[i] = ds_queue_dequeue(queueCopy);
+	}
+	show_debug_message(string(newArray));
+	for(var i = 0; i < array_length(newArray); i ++){
+		//var currInstance = instance_find(oAddCarNode, i);
+		//show_debug_message(currInstance);
 		
-		if (currInstance.props == [argument0, argument1, argument2, argument3] &&
-		currInstance.dayToAdd == argument4 &&
-		currInstance.timeToAdd == argument5){
+		if (newArray[i] == [argument0, argument1, argument2, argument3]){
+			show_debug_message("HELLO");
 			return;
 		} else {
 			var carToAdd = instance_create_depth(-1, -1, 0, oAddCarNode);
