@@ -40,12 +40,19 @@ if(counter % room_speed == 0) {
 	//handle random customer logic
 	var should_add_car = round(random_range(0,100)) > 90;
 	if(should_add_car){
-		global.queueSize += 1;
+		ds_queue_enqueue(global.queue, []);
 	}
 }
 
 //handle day changes
-timeOfDayIndex = floor(time / 5);
+
+if(timeOfDayIndex == 3 && instance_exists(oCar)){
+	counter --;
+	}
+
+timeOfDayIndex = floor(time / secsPerIndex);
+
+
 
 if(timeOfDayIndex == 4){
 	instance_create_layer(-1,-1,"Instances",oCutscene);
@@ -73,6 +80,7 @@ if(counter % room_speed = 0 && timeOfDayIndex < 4 && layer_exists(backgroundLaye
 	layer_background_destroy(currentLayer);
 	currentLayer = layer_background_create(backgroundLayer, timeOfDay[? timeOfDayIndex]);
 	layer_background_stretch(currentLayer, true);
-	
 }
 
+addCar(4,2,pointer_null,0,1,10);
+addCar(4,2,pointer_null,0,1,5);

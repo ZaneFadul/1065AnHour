@@ -6,13 +6,7 @@ else sprite_index = stationIDsno[? stationID];
 
 if (!inUse) {
 	if(pump == pointer_null) pump = instance_create_depth(x + 100, y + 80, 0, oGasPump);
-} else {
-	if(pump != pointer_null) {
-		show_debug_message("Now in use.");
-		//instance_destroy(pump);
-		//pump = pointer_null;
-	}
-}
+} 
 
 //If car with low gas shows up, can use pump
 var player_in_hitbox = false; //&& place_meeting(x + sprite_width, y + sprite_height, oPlayer);

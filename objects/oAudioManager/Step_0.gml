@@ -9,6 +9,7 @@ if(room_get_name(room) == "setup"){
 }
 
 if(!instance_exists(oTime)) exit;
+
 if(oTime.timeOfDayIndex == 3){
 	fadeOut(sDay);
 	fadeIn(sNightCalm);
