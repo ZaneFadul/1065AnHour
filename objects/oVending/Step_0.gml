@@ -13,7 +13,11 @@ else if(!player_by_station && is_e){
 	is_e = false;
 }
 
-if(!audio_is_playing(sVendingCan) && player_by_station && global.keyInteract && !instance_exists(oVendingGUI)) {
+if(state == "CLOSED" && !audio_is_playing(sVendingCan) && player_by_station && global.keyInteract && !instance_exists(oVendingGUI)) {
 	audio_play_sound(sVendingCan,100,false);
 	instance_create_depth(0,0,-12, oVendingGUI);
+}
+
+if(state == "OPEN" && global.keyInteract){
+	//goto last room
 }
