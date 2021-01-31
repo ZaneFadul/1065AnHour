@@ -9,7 +9,7 @@ maxTankCapacity = 100;
 currentTankCapacity = 0
 tank = instance_create_depth(x, y, -3, oGasTank);
 tank.car = self;
-wheel = instance_create_depth(x, y, -3, oSmallWheel);
+wheel = instance_create_depth(x, y, -4, oSmallWheel);
 sil = instance_create_depth(x, y, -4, oSil);
 
 maxAccel = 10 ;
@@ -23,6 +23,8 @@ colors[? 4] = smcar4;
 
 color = colors[? round(random_range(1,4))];
 
+sprite_index = color;
+
 scale = 0.70;
 
 var gas1 = instance_find(oGasStation,0);
@@ -31,18 +33,18 @@ if(gas1 != noone && !gas1.car_is_nearby) {
 	while(!gas1.car_is_nearby){
 		with(gas1) car_is_nearby = true;
 	}
-	x = view_x - sprite_get_width(smcar1);
+	x = view_x - sprite_get_width(color);
 	velOffset = 1;
 }
 else if(gas2 != noone && !gas2.car_is_nearby){
 	while(!gas2.car_is_nearby){
 		with(gas2) car_is_nearby = true;
 	}
-	x = view_w + sprite_get_width(smcar1);
+	x = view_w + sprite_get_width(color);
 	velOffset = -1;
 } else {
 	with(gas1) car_is_nearby = true;
-	x = view_x - sprite_get_width(smcar1);
+	x = view_x - sprite_get_width(color);
 }
 
 vel = maxAccel * velOffset;

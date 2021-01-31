@@ -9,7 +9,7 @@ if(gas1 != noone && gas2 != noone){
 
 if(!allInUse && global.queueSize > 0){
 	global.queueSize -= 1;
-	instance_create_depth(view_x - sprite_get_width(smcar1), 735, -3, oCar);
+	instance_create_depth(view_x - sprite_get_width(smcar1), 650, -3, oCar);
 }
 
 

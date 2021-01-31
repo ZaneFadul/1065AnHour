@@ -8,6 +8,7 @@ if(!instance_exists(oCutscene)){
 	keyUp = global.keyUp;
 	keyDown = global.keyDown;
 	
+	
 	keyInteract = global.keyInteract;
 	keyShoot = global.keyShoot;
 	keyDash = global.keyDash;
@@ -23,13 +24,15 @@ if(!instance_exists(oCutscene)){
 	}
 }
 
-if(keyLeft > 0){
+if(keyLeft > 0 || keyboard_check(ord("A"))){
+	keyLeft = 1
 	moveLeft = 1;
 	moveRight = 0;
 	lookUp = 0;
 	lookDown = 0;
 }
-if(keyRight > 0){
+if(keyRight > 0 || keyboard_check(ord("D"))){
+	keyRight = 1;
 	moveLeft = 0;
 	moveRight = 1;
 	lookUp = 0;

@@ -3,7 +3,8 @@
 if(!instance_exists(oTime)) exit;
 
 draw_set_font(font0);
-draw_text(view_w - 80,view_h - 80,"Day: " + string(oTime.day));
+draw_text_transformed(view_w - 320,view_h - 70,"Day: " + string(oTime.day),2,2,0);
+draw_text_transformed_color(view_w - 180,view_h - 70,"TIP$: " + string(oPlayer.tips),2,2,0,c_lime,c_lime,c_lime,c_lime,1);
 
 if(!global.pause) exit;
 

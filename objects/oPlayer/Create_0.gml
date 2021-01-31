@@ -4,7 +4,7 @@
 depth = 0;
 //GAME MECHANIC VARIABLES
 name = "";
-walkSpeed = 3;
+walkSpeed = 4.5;
 
 keyLeft = 0;
 keyRight = 0;

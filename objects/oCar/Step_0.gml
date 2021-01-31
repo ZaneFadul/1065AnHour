@@ -2,6 +2,7 @@
 // You can write your code in this editor
 tank.x = x + sprite_width/3; tank.y = y + sprite_height/2;
 sil.x = x + 450 * velOffset; sil.y = y + 78;
+wheel.x = x + velOffset;
 
 if(state == "LOW" || state == "FULL") {
 	counter ++;
@@ -42,10 +43,10 @@ sil.image_xscale = scale * velOffset;
 sil.image_yscale = scale;
 
 if(vel > 0) {
-	wheel.sprite_index = smallwmov;
+	wheel.sprite_index = smallwmov; //this sprite doesnt move
 	wheel.image_speed = 5 * vel;
 } else {
-	wheel.sprite_index = smallw;
+	wheel.sprite_index = smallw; //this sprite moves??
 }
 image_xscale = scale * velOffset;
 image_yscale = scale;

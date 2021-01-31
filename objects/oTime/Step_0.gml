@@ -63,12 +63,15 @@ if(timeOfDayIndex == 4){
 		[cutsceneChangeVariable, oCutscene, "color", c_silver],
 		[cutsceneBlack],
 	];
-	
+	with(oCar){
+		instance_destroy(self);	
+	}
 }
 
 if(counter % room_speed = 0 && timeOfDayIndex < 4 && layer_exists(backgroundLayer) && layer_background_get_index(currentLayer) != timeOfDay[? timeOfDayIndex]){
 	layer_background_destroy(currentLayer);
 	currentLayer = layer_background_create(backgroundLayer, timeOfDay[? timeOfDayIndex]);
 	layer_background_stretch(currentLayer, true);
+	
 }
 
