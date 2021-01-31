@@ -16,3 +16,7 @@ buttons[9].number = 0;
 
 nums = "";
 depth = -11;
+
+if(!audio_is_playing(sVending)){
+	audio_play_sound(sVending,10,1);	
+}
